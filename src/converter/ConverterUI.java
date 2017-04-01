@@ -5,6 +5,12 @@ import javax.swing.*;
 import java.awt.*; 
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener;
+
+/**
+ * ConverterUI is UI of program.
+ * @author Napong Dungduangsasitorn
+ *
+ */
 public class ConverterUI extends JFrame{    
 	// attributes for graphical components    
 	private JButton convertButton, clearButton;    
@@ -13,7 +19,7 @@ public class ConverterUI extends JFrame{
 	private JLabel equal;
 
 
-	//TODO add other attributes 
+	//Constructor convertorUI.
 	public ConverterUI() {    
 
 		this.setTitle("Length Converter"); 
@@ -75,6 +81,8 @@ public class ConverterUI extends JFrame{
 
 		convertButton.addActionListener(new ConvertButtonListener());
 		inputField1.addActionListener(new ConvertButtonListener());
+		
+		// clear text field.
 		clearButton.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {

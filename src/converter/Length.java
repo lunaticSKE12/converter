@@ -1,6 +1,12 @@
 package converter;
 
+/**
+ * Length contain lenght unit.
+ * @author Napong Dungduangsasitorn
+ *
+ */
 public enum Length implements Unit{
+	
 	 /*  Define the members of the enumeration   
 	  *  The attributes are:   
 	  *  name = a string name for this unit,    
@@ -27,11 +33,19 @@ public enum Length implements Unit{
 		this.value = value;
 	}
 
+	/**
+	 * getValue to get value of unit.
+	 * @return value of unit.
+	 */
 	@Override
 	public double getValue() {
 		return this.value;
 	}
 
+	/**
+	 * toString is return name of unit
+	 * @return name of unit.
+	 */
 	public String toString(){
 		return name;
 	}
